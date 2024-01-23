@@ -1,0 +1,4 @@
+C:\Gen20_Automation\Dat_Files\MBRDI_223_1227_Carline  #Csv Dat folder
+C:\Gen20_Automation\Dat_Files\MBRDI_223_1227_Carline\OMS_Gen20x_reference_223_original.xlsx	 #Referance file
+C:\Gen20_Automation\ImageExtractor_V1.76_220705_test_version\Windows
+C:\\testteam_IVTS    #csv_dump path

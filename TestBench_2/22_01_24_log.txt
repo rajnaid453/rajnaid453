@@ -1,0 +1,1014 @@
+
+17_47_16 : VCPU flashing Started >> 
+17_49_26 : VCPU flashing Started >> 
+17_49_33 : 
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.745:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.747:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /Quad-G3G-RS232-DebugAdapter C - FT5YSGTJ,3000000,even,8,1 /KDSSAVE /au
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.756:  Entered Flash_ulwInit()
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.763:  Entered Flash_ulwShutDown()
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.771:  Exit Flash_ulwShutDown() with success
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.777:  Entered FLASH_ulwSetParms
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.786:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.792:  Exit FLASH_ulwSetParms
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.799:  Exit Flash_ulwInit() with success
+ >> 
+17_49_33 : 22.01.2024 - 17:49:29.806:  Entered Flash_ulwGetDFParms
+ >> 
+17_49_33 : 22.01.2024 - 17:49:30.671:  Exit Flash_ulwGetDFParms
+ >> 
+17_49_33 : 22.01.2024 - 17:49:30.673:  Entered Flash_ulwGetDFContents
+ >> 
+17_49_33 : 22.01.2024 - 17:49:31.524:  Exit Flash_ulwGetDFContents
+ >> 
+17_49_33 : 22.01.2024 - 17:49:32.667:  Com-Port setting string is: ,3000000,E,8,1
+ >> 
+17_49_33 : 22.01.2024 - 17:49:32.671:  Error: No valid Com Port selected -> Error !!
+ >> 
+17_49_33 : 22.01.2024 - 17:49:32.691:  Write Resultfile with value 0x74 >> 
+17_50_05 : VCPU flashing Started >> 
+17_50_11 : 
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.808:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.811:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  - Shortcut /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /Quad-G3G-RS232-DebugAdapter C - FT5YSGTJ,3000000,even,8,1 /KDSSAVE /au
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.823:  Entered Flash_ulwInit()
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.835:  Entered Flash_ulwShutDown()
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.842:  Exit Flash_ulwShutDown() with success
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.849:  Entered FLASH_ulwSetParms
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.855:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.862:  Exit FLASH_ulwSetParms
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.868:  Exit Flash_ulwInit() with success
+ >> 
+17_50_11 : 22.01.2024 - 17:50:07.874:  Entered Flash_ulwGetDFParms
+ >> 
+17_50_11 : 22.01.2024 - 17:50:08.732:  Exit Flash_ulwGetDFParms
+ >> 
+17_50_11 : 22.01.2024 - 17:50:08.735:  Entered Flash_ulwGetDFContents
+ >> 
+17_50_11 : 22.01.2024 - 17:50:09.588:  Exit Flash_ulwGetDFContents
+ >> 
+17_50_11 : 22.01.2024 - 17:50:10.719:  Com-Port setting string is: ,3000000,E,8,1
+ >> 
+17_50_11 : 22.01.2024 - 17:50:10.720:  Error: No valid Com Port selected -> Error !!
+ >> 
+17_50_11 : 22.01.2024 - 17:50:10.735:  Write Resultfile with value 0x74 >> 
+17_54_06 : VCPU flashing Started >> 
+17_54_12 : 
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.240:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.241:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  - Shortcut /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /Quad-G3G-RS232-DebugAdapter C - FT5YSGTJ,3000000,even,8,1 /KDSSAVE /au
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.248:  Entered Flash_ulwInit()
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.254:  Entered Flash_ulwShutDown()
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.260:  Exit Flash_ulwShutDown() with success
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.267:  Entered FLASH_ulwSetParms
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.273:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.280:  Exit FLASH_ulwSetParms
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.286:  Exit Flash_ulwInit() with success
+ >> 
+17_54_12 : 22.01.2024 - 17:54:09.292:  Entered Flash_ulwGetDFParms
+ >> 
+17_54_12 : 22.01.2024 - 17:54:10.151:  Exit Flash_ulwGetDFParms
+ >> 
+17_54_12 : 22.01.2024 - 17:54:10.153:  Entered Flash_ulwGetDFContents
+ >> 
+17_54_12 : 22.01.2024 - 17:54:11.010:  Exit Flash_ulwGetDFContents
+ >> 
+17_54_12 : 22.01.2024 - 17:54:12.245:  Com-Port setting string is: ,3000000,E,8,1
+ >> 
+17_54_12 : 22.01.2024 - 17:54:12.248:  Error: No valid Com Port selected -> Error !!
+ >> 
+17_54_12 : 22.01.2024 - 17:54:12.272:  Write Resultfile with value 0x74 >> 
+17_58_31 : VCPU flashing Started >> 
+17_58_37 : 
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.855:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.857:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  - Shortcut /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,even,8,1 /KDSSAVE /au
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.863:  Entered Flash_ulwInit()
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.870:  Entered Flash_ulwShutDown()
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.876:  Exit Flash_ulwShutDown() with success
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.881:  Entered FLASH_ulwSetParms
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.889:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.896:  Exit FLASH_ulwSetParms
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.902:  Exit Flash_ulwInit() with success
+ >> 
+17_58_37 : 22.01.2024 - 17:58:33.909:  Entered Flash_ulwGetDFParms
+ >> 
+17_58_37 : 22.01.2024 - 17:58:34.764:  Exit Flash_ulwGetDFParms
+ >> 
+17_58_37 : 22.01.2024 - 17:58:34.766:  Entered Flash_ulwGetDFContents
+ >> 
+17_58_37 : 22.01.2024 - 17:58:35.619:  Exit Flash_ulwGetDFContents
+ >> 
+17_58_37 : 22.01.2024 - 17:58:36.758:  Com-Port setting string is: ,3000000,E,8,1
+ >> 
+17_58_37 : 22.01.2024 - 17:58:36.760:  Error: No valid Com Port selected -> Error !!
+ >> 
+17_58_37 : 22.01.2024 - 17:58:36.768:  Write Resultfile with value 0x74 >> 
+18_00_31 : VCPU flashing Started >> 
+18_00_37 : 
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.560:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.563:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  - Shortcut /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,8,1,even /KDSSAVE /au
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.581:  Entered Flash_ulwInit()
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.592:  Entered Flash_ulwShutDown()
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.600:  Exit Flash_ulwShutDown() with success
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.607:  Entered FLASH_ulwSetParms
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.614:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.620:  Exit FLASH_ulwSetParms
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.627:  Exit Flash_ulwInit() with success
+ >> 
+18_00_37 : 22.01.2024 - 18:00:33.633:  Entered Flash_ulwGetDFParms
+ >> 
+18_00_37 : 22.01.2024 - 18:00:34.488:  Exit Flash_ulwGetDFParms
+ >> 
+18_00_37 : 22.01.2024 - 18:00:34.491:  Entered Flash_ulwGetDFContents
+ >> 
+18_00_37 : 22.01.2024 - 18:00:35.344:  Exit Flash_ulwGetDFContents
+ >> 
+18_00_37 : 22.01.2024 - 18:00:36.535:  Com-Port setting string is: ,3000000,E,8,1
+ >> 
+18_00_37 : 22.01.2024 - 18:00:36.536:  Error: No valid Com Port selected -> Error !!
+ >> 
+18_00_37 : 22.01.2024 - 18:00:36.544:  Write Resultfile with value 0x74 >> 
+18_03_27 : VCPU flashing Started >> 
+18_03_33 : 
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.755:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.757:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  - Shortcut /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,8,1,even /KDSSAVE /au
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.769:  Entered Flash_ulwInit()
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.782:  Entered Flash_ulwShutDown()
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.797:  Exit Flash_ulwShutDown() with success
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.805:  Entered FLASH_ulwSetParms
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.816:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.825:  Exit FLASH_ulwSetParms
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.833:  Exit Flash_ulwInit() with success
+ >> 
+18_03_33 : 22.01.2024 - 18:03:29.840:  Entered Flash_ulwGetDFParms
+ >> 
+18_03_33 : 22.01.2024 - 18:03:30.704:  Exit Flash_ulwGetDFParms
+ >> 
+18_03_33 : 22.01.2024 - 18:03:30.706:  Entered Flash_ulwGetDFContents
+ >> 
+18_03_33 : 22.01.2024 - 18:03:31.560:  Exit Flash_ulwGetDFContents
+ >> 
+18_03_33 : 22.01.2024 - 18:03:32.716:  Com-Port setting string is: ,3000000,E,8,1
+ >> 
+18_03_33 : 22.01.2024 - 18:03:32.717:  Error: No valid Com Port selected -> Error !!
+ >> 
+18_03_33 : 22.01.2024 - 18:03:32.730:  Write Resultfile with value 0x74 >> 
+18_03_41 : VCPU flashing Started >> 
+18_03_47 : 
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.654:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.656:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  - Shortcut /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,8,1,even /KDSSAVE /au
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.662:  Entered Flash_ulwInit()
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.670:  Entered Flash_ulwShutDown()
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.676:  Exit Flash_ulwShutDown() with success
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.683:  Entered FLASH_ulwSetParms
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.689:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.696:  Exit FLASH_ulwSetParms
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.702:  Exit Flash_ulwInit() with success
+ >> 
+18_03_47 : 22.01.2024 - 18:03:43.708:  Entered Flash_ulwGetDFParms
+ >> 
+18_03_47 : 22.01.2024 - 18:03:44.563:  Exit Flash_ulwGetDFParms
+ >> 
+18_03_47 : 22.01.2024 - 18:03:44.566:  Entered Flash_ulwGetDFContents
+ >> 
+18_03_47 : 22.01.2024 - 18:03:45.417:  Exit Flash_ulwGetDFContents
+ >> 
+18_03_47 : 22.01.2024 - 18:03:46.573:  Com-Port setting string is: ,3000000,E,8,1
+ >> 
+18_03_47 : 22.01.2024 - 18:03:46.573:  Error: No valid Com Port selected -> Error !!
+ >> 
+18_03_47 : 22.01.2024 - 18:03:46.582:  Write Resultfile with value 0x74 >> 
+18_05_23 : VCPU flashing Started >> 
+18_05_29 : 
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.789:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.790:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,8,1,even /KDSSAVE /au
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.796:  Entered Flash_ulwInit()
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.805:  Entered Flash_ulwShutDown()
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.811:  Exit Flash_ulwShutDown() with success
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.817:  Entered FLASH_ulwSetParms
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.824:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.830:  Exit FLASH_ulwSetParms
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.836:  Exit Flash_ulwInit() with success
+ >> 
+18_05_29 : 22.01.2024 - 18:05:25.843:  Entered Flash_ulwGetDFParms
+ >> 
+18_05_29 : 22.01.2024 - 18:05:26.706:  Exit Flash_ulwGetDFParms
+ >> 
+18_05_29 : 22.01.2024 - 18:05:26.708:  Entered Flash_ulwGetDFContents
+ >> 
+18_05_29 : 22.01.2024 - 18:05:27.560:  Exit Flash_ulwGetDFContents
+ >> 
+18_05_29 : 22.01.2024 - 18:05:28.698:  Com-Port setting string is: ,3000000,E,8,1
+ >> 
+18_05_29 : 22.01.2024 - 18:05:28.699:  Error: No valid Com Port selected -> Error !!
+ >> 
+18_05_29 : 22.01.2024 - 18:05:28.709:  Write Resultfile with value 0x74 >> 
+18_13_05 : VCPU flashing Started >> 
+18_13_11 : 
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.611:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.612:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  - Shortcut /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS, /Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,8,1,even /KDSSAVE /au
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.618:  Entered Flash_ulwInit()
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.625:  Entered Flash_ulwShutDown()
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.631:  Exit Flash_ulwShutDown() with success
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.637:  Entered FLASH_ulwSetParms
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.644:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.650:  Exit FLASH_ulwSetParms
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.656:  Exit Flash_ulwInit() with success
+ >> 
+18_13_11 : 22.01.2024 - 18:13:07.664:  Entered Flash_ulwGetDFParms
+ >> 
+18_13_11 : 22.01.2024 - 18:13:08.521:  Exit Flash_ulwGetDFParms
+ >> 
+18_13_11 : 22.01.2024 - 18:13:08.524:  Entered Flash_ulwGetDFContents
+ >> 
+18_13_11 : 22.01.2024 - 18:13:09.374:  Exit Flash_ulwGetDFContents
+ >> 
+18_13_11 : 22.01.2024 - 18:13:10.553:  Com-Port setting string is: ,3000000,E,8,1
+ >> 
+18_13_11 : 22.01.2024 - 18:13:10.557:  Error: No valid Com Port selected -> Error !!
+ >> 
+18_13_11 : 22.01.2024 - 18:13:10.565:  Write Resultfile with value 0x74 >> 
+18_14_28 : VCPU flashing Started >> 
+18_15_04 : 
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.413:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.414:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  - Shortcut /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /iQuad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,8,1,even /KDSSAVE /au
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.423:  Entered Flash_ulwInit()
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.430:  Entered Flash_ulwShutDown()
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.438:  Exit Flash_ulwShutDown() with success
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.448:  Entered FLASH_ulwSetParms
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.456:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.464:  Exit FLASH_ulwSetParms
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.475:  Exit Flash_ulwInit() with success
+ >> 
+18_15_04 : 22.01.2024 - 18:14:30.485:  Entered Flash_ulwGetDFParms
+ >> 
+18_15_04 : 22.01.2024 - 18:14:31.343:  Exit Flash_ulwGetDFParms
+ >> 
+18_15_04 : 22.01.2024 - 18:14:31.346:  Entered Flash_ulwGetDFContents
+ >> 
+18_15_04 : 22.01.2024 - 18:14:32.197:  Exit Flash_ulwGetDFContents
+ >> 
+18_15_04 : 22.01.2024 - 18:14:33.394:  Entered Flash_ulwGetDFParms
+ >> 
+18_15_04 : 22.01.2024 - 18:14:34.243:  Exit Flash_ulwGetDFParms
+ >> 
+18_15_04 : 22.01.2024 - 18:14:34.244:  Entered Flash_ulwDoConnect()
+ >> 
+18_15_04 : 22.01.2024 - 18:14:34.250:  Parameters are: FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,N,8,1, C:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl, 0xEBFFFF32, 0
+ >> 
+18_15_04 : 22.01.2024 - 18:14:34.256:  Entered Flash_ulwOpenValidPort(FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,N,8,1)
+ >> 
+18_15_04 : 22.01.2024 - 18:14:34.330:  Data from FT_ListDevices() to open port are: (idx=0, Serial Number=FT6RVBE9C)
+ >> 
+18_15_04 : 22.01.2024 - 18:14:34.346:  COM-Port opened with: 3000000
+ >> 
+18_15_04 : 22.01.2024 - 18:14:34.347:  Exit Flash_ulwOpenValidPort() with success
+ >> 
+18_15_04 : 22.01.2024 - 18:14:34.353:  Read data from DNL-File
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.210:  Found Type AURIX2G of TC39x
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.211:  Read DFInfo (DIB). New values are: 0, 0, 300000000, TC39x, 10000, 10000, 2000, 65000, 50, 50000, 500000, 1, 100, 4, 100, 10000, 800, 4000, 96, 130, 200000, 32, 130, 200000
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.218:  Debug: PortSwitch(P_NORM)
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.241:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.257:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.335:  ----->Switch ON VPP
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.404:  Init Bootstrap, Attempt: 1
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.405:  ERROR: Windows notify - Break Detected
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.414:  Download Introloader
+ >> 
+18_15_04 : 22.01.2024 - 18:14:35.419:  Download FlashWriter (size: 0x20000)
+ >> 
+18_15_04 : 22.01.2024 - 18:14:36.142:  Set Parity for MAUS-Com
+ >> 
+18_15_04 : 22.01.2024 - 18:14:36.144:  Request Maus Level 0 for Flash
+ >> 
+18_15_04 : 22.01.2024 - 18:14:36.160:  Request Maus, Attempt: 1
+ >> 
+18_15_04 : 22.01.2024 - 18:14:36.422:  ERROR: -1- Portreceive mit Fehler (Timeout)
+ >> 
+18_15_04 : 22.01.2024 - 18:14:41.615:  No Success on MausReceive ! (retry overflow) 
+ >> 
+18_15_04 : 22.01.2024 - 18:14:41.617:  Request Maus, Attempt: 2
+ >> 
+18_15_04 : 22.01.2024 - 18:14:41.882:  ERROR: -1- Portreceive mit Fehler (Timeout)
+ >> 
+18_15_04 : 22.01.2024 - 18:14:47.075:  No Success on MausReceive ! (retry overflow) 
+ >> 
+18_15_04 : 22.01.2024 - 18:14:47.077:  Request Maus, Attempt: 3
+ >> 
+18_15_04 : 22.01.2024 - 18:14:47.339:  ERROR: -1- Portreceive mit Fehler (Timeout)
+ >> 
+18_15_04 : 22.01.2024 - 18:14:52.547:  No Success on MausReceive ! (retry overflow) 
+ >> 
+18_15_04 : 22.01.2024 - 18:14:52.550:  Request Maus, Attempt: 4
+ >> 
+18_15_04 : 22.01.2024 - 18:14:52.811:  ERROR: -1- Portreceive mit Fehler (Timeout)
+ >> 
+18_15_04 : 22.01.2024 - 18:14:58.013:  No Success on MausReceive ! (retry overflow) 
+ >> 
+18_15_04 : 22.01.2024 - 18:14:58.015:  Request Maus, Attempt: 5
+ >> 
+18_15_04 : 22.01.2024 - 18:14:58.274:  ERROR: -1- Portreceive mit Fehler (Timeout)
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.433:  No Success on MausReceive ! (retry overflow) 
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.434:  ERROR: No response for the Maus Level request
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.441:  ----->Switch OFF VPP
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.458:  ----->Set Reset RELEASE
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.459:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.513:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.514:  Debug: PortSwitch(P_OFF)
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.560:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.561:  Exit Flash_ulwDoConnect() with no success
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.567:  Entered Flash_ulwDoReset()
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.574:  ----->Switch OFF VPP
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.591:  ----->Set Reset ACTIVE
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.592:  Debug: PortSwitch(P_RESON)
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.639:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.641:  ----->Set Reset RELEASE
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.647:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.701:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.702:  Debug: PortSwitch(P_OFF)
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.747:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.808:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 closed
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.810:  Exit Flash_ulwDoReset() with 0x0
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.819:  Write Resultfile with value 0x36
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.829:  Entered Flash_ulwDoDisconnect()
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.835:  ----->Switch OFF VPP
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.851:  ----->Set Reset RELEASE
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.853:  Exit Flash_ulwDoDisconnect()
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.859:  Entered Flash_ulwShutDown()
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.866:  ----->Switch OFF VPP
+ >> 
+18_15_04 : 22.01.2024 - 18:15:03.872:  Exit Flash_ulwShutDown() with success >> 
+18_16_10 : VCPU flashing Started >> 
+18_16_21 : 
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.662:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.663:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  - Shortcut /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /iQuad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,8,1,even /KDSSAVE /au
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.669:  Entered Flash_ulwInit()
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.677:  Entered Flash_ulwShutDown()
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.684:  Exit Flash_ulwShutDown() with success
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.690:  Entered FLASH_ulwSetParms
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.699:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.705:  Exit FLASH_ulwSetParms
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.712:  Exit Flash_ulwInit() with success
+ >> 
+18_16_21 : 22.01.2024 - 18:16:12.718:  Entered Flash_ulwGetDFParms
+ >> 
+18_16_21 : 22.01.2024 - 18:16:13.571:  Exit Flash_ulwGetDFParms
+ >> 
+18_16_21 : 22.01.2024 - 18:16:13.573:  Entered Flash_ulwGetDFContents
+ >> 
+18_16_21 : 22.01.2024 - 18:16:14.456:  Exit Flash_ulwGetDFContents
+ >> 
+18_16_21 : 22.01.2024 - 18:16:15.661:  Entered Flash_ulwGetDFParms
+ >> 
+18_16_21 : 22.01.2024 - 18:16:16.509:  Exit Flash_ulwGetDFParms
+ >> 
+18_16_21 : 22.01.2024 - 18:16:16.510:  Entered Flash_ulwDoConnect()
+ >> 
+18_16_21 : 22.01.2024 - 18:16:16.516:  Parameters are: FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,N,8,1, C:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl, 0xEBFFFF32, 0
+ >> 
+18_16_21 : 22.01.2024 - 18:16:16.523:  Entered Flash_ulwOpenValidPort(FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,N,8,1)
+ >> 
+18_16_21 : 22.01.2024 - 18:16:16.598:  Data from FT_ListDevices() to open port are: (idx=0, Serial Number=FT6RVBE9C)
+ >> 
+18_16_21 : 22.01.2024 - 18:16:16.615:  COM-Port opened with: 3000000
+ >> 
+18_16_21 : 22.01.2024 - 18:16:16.616:  Exit Flash_ulwOpenValidPort() with success
+ >> 
+18_16_21 : 22.01.2024 - 18:16:16.625:  Read data from DNL-File
+ >> 
+18_16_21 : 22.01.2024 - 18:16:17.484:  Found Type AURIX2G of TC39x
+ >> 
+18_16_21 : 22.01.2024 - 18:16:17.485:  Read DFInfo (DIB). New values are: 0, 0, 300000000, TC39x, 10000, 10000, 2000, 65000, 50, 50000, 500000, 1, 100, 4, 100, 10000, 800, 4000, 96, 130, 200000, 32, 130, 200000
+ >> 
+18_16_21 : 22.01.2024 - 18:16:17.492:  Debug: PortSwitch(P_NORM)
+ >> 
+18_16_21 : 22.01.2024 - 18:16:17.503:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_16_21 : 22.01.2024 - 18:16:17.518:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_16_21 : 22.01.2024 - 18:16:17.597:  ----->Switch ON VPP
+ >> 
+18_16_21 : 22.01.2024 - 18:16:17.666:  Init Bootstrap, Attempt: 1
+ >> 
+18_16_21 : 22.01.2024 - 18:16:17.666:  ERROR: Windows notify - Break Detected
+ >> 
+18_16_21 : 22.01.2024 - 18:16:18.175:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_16_21 : 22.01.2024 - 18:16:18.253:  ----->Switch ON VPP
+ >> 
+18_16_21 : 22.01.2024 - 18:16:18.321:  Init Bootstrap, Attempt: 2
+ >> 
+18_16_21 : 22.01.2024 - 18:16:18.824:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_16_21 : 22.01.2024 - 18:16:18.902:  ----->Switch ON VPP
+ >> 
+18_16_21 : 22.01.2024 - 18:16:18.971:  Init Bootstrap, Attempt: 3
+ >> 
+18_16_21 : 22.01.2024 - 18:16:19.472:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_16_21 : 22.01.2024 - 18:16:19.550:  ----->Switch ON VPP
+ >> 
+18_16_21 : 22.01.2024 - 18:16:19.620:  Init Bootstrap, Attempt: 4
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.121:  ERROR: No response on entering the Bootstrap-mode
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.122:  ----->Switch OFF VPP
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.139:  ----->Set Reset RELEASE
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.140:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.192:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.194:  Debug: PortSwitch(P_OFF)
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.256:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.257:  Exit Flash_ulwDoConnect() with no success
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.264:  Entered Flash_ulwDoReset()
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.270:  ----->Switch OFF VPP
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.287:  ----->Set Reset ACTIVE
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.288:  Debug: PortSwitch(P_RESON)
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.334:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.336:  ----->Set Reset RELEASE
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.342:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.396:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.397:  Debug: PortSwitch(P_OFF)
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.443:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.504:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 closed
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.507:  Exit Flash_ulwDoReset() with 0x0
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.517:  Write Resultfile with value 0x34
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.528:  Entered Flash_ulwDoDisconnect()
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.535:  ----->Switch OFF VPP
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.553:  ----->Set Reset RELEASE
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.554:  Exit Flash_ulwDoDisconnect()
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.561:  Entered Flash_ulwShutDown()
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.567:  ----->Switch OFF VPP
+ >> 
+18_16_21 : 22.01.2024 - 18:16:20.574:  Exit Flash_ulwShutDown() with success >> 
+18_17_00 : VCPU flashing Started >> 
+18_17_10 : 
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.385:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.387:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20x\builds\KDS\7513700148.KDS /iQuad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,8,1,even /KDSSAVE /au
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.400:  Entered Flash_ulwInit()
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.413:  Entered Flash_ulwShutDown()
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.424:  Exit Flash_ulwShutDown() with success
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.432:  Entered FLASH_ulwSetParms
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.438:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.444:  Exit FLASH_ulwSetParms
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.452:  Exit Flash_ulwInit() with success
+ >> 
+18_17_10 : 22.01.2024 - 18:17:02.460:  Entered Flash_ulwGetDFParms
+ >> 
+18_17_10 : 22.01.2024 - 18:17:03.325:  Exit Flash_ulwGetDFParms
+ >> 
+18_17_10 : 22.01.2024 - 18:17:03.328:  Entered Flash_ulwGetDFContents
+ >> 
+18_17_10 : 22.01.2024 - 18:17:04.184:  Exit Flash_ulwGetDFContents
+ >> 
+18_17_10 : 22.01.2024 - 18:17:05.336:  Entered Flash_ulwGetDFParms
+ >> 
+18_17_10 : 22.01.2024 - 18:17:06.184:  Exit Flash_ulwGetDFParms
+ >> 
+18_17_10 : 22.01.2024 - 18:17:06.185:  Entered Flash_ulwDoConnect()
+ >> 
+18_17_10 : 22.01.2024 - 18:17:06.191:  Parameters are: FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,N,8,1, C:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl, 0xEBFFFF32, 0
+ >> 
+18_17_10 : 22.01.2024 - 18:17:06.198:  Entered Flash_ulwOpenValidPort(FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,N,8,1)
+ >> 
+18_17_10 : 22.01.2024 - 18:17:06.274:  Data from FT_ListDevices() to open port are: (idx=0, Serial Number=FT6RVBE9C)
+ >> 
+18_17_10 : 22.01.2024 - 18:17:06.290:  COM-Port opened with: 3000000
+ >> 
+18_17_10 : 22.01.2024 - 18:17:06.291:  Exit Flash_ulwOpenValidPort() with success
+ >> 
+18_17_10 : 22.01.2024 - 18:17:06.298:  Read data from DNL-File
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.152:  Found Type AURIX2G of TC39x
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.153:  Read DFInfo (DIB). New values are: 0, 0, 300000000, TC39x, 10000, 10000, 2000, 65000, 50, 50000, 500000, 1, 100, 4, 100, 10000, 800, 4000, 96, 130, 200000, 32, 130, 200000
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.160:  Debug: PortSwitch(P_NORM)
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.173:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.188:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.266:  ----->Switch ON VPP
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.335:  Init Bootstrap, Attempt: 1
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.838:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.916:  ----->Switch ON VPP
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.986:  Init Bootstrap, Attempt: 2
+ >> 
+18_17_10 : 22.01.2024 - 18:17:07.987:  PortClear has shreddered 2550 characters
+ >> 
+18_17_10 : 22.01.2024 - 18:17:08.496:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_17_10 : 22.01.2024 - 18:17:08.574:  ----->Switch ON VPP
+ >> 
+18_17_10 : 22.01.2024 - 18:17:08.643:  Init Bootstrap, Attempt: 3
+ >> 
+18_17_10 : 22.01.2024 - 18:17:08.644:  PortClear has shreddered 2550 characters
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.152:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.231:  ----->Switch ON VPP
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.301:  Init Bootstrap, Attempt: 4
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.803:  ERROR: No response on entering the Bootstrap-mode
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.804:  ----->Switch OFF VPP
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.821:  ----->Set Reset RELEASE
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.822:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.876:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.878:  Debug: PortSwitch(P_OFF)
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.922:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.923:  Exit Flash_ulwDoConnect() with no success
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.930:  Entered Flash_ulwDoReset()
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.936:  ----->Switch OFF VPP
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.953:  ----->Set Reset ACTIVE
+ >> 
+18_17_10 : 22.01.2024 - 18:17:09.954:  Debug: PortSwitch(P_RESON)
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.001:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.003:  ----->Set Reset RELEASE
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.009:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.049:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.050:  Debug: PortSwitch(P_OFF)
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.096:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.158:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 closed
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.160:  Exit Flash_ulwDoReset() with 0x0
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.167:  Write Resultfile with value 0x34
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.175:  Entered Flash_ulwDoDisconnect()
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.180:  ----->Switch OFF VPP
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.196:  ----->Set Reset RELEASE
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.197:  Exit Flash_ulwDoDisconnect()
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.204:  Entered Flash_ulwShutDown()
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.210:  ----->Switch OFF VPP
+ >> 
+18_17_10 : 22.01.2024 - 18:17:10.217:  Exit Flash_ulwShutDown() with success >> 
+18_19_07 : VCPU flashing Started >> 
+18_19_18 : 
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.118:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.122:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20X\builds\KDS\7513700148.KDS /iQuad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,even,8,1 /KDSSAVE /av
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.142:  Entered Flash_ulwInit()
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.156:  Entered Flash_ulwShutDown()
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.167:  Exit Flash_ulwShutDown() with success
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.177:  Entered FLASH_ulwSetParms
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.185:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.195:  Exit FLASH_ulwSetParms
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.201:  Exit Flash_ulwInit() with success
+ >> 
+18_19_18 : 22.01.2024 - 18:19:10.208:  Entered Flash_ulwGetDFParms
+ >> 
+18_19_18 : 22.01.2024 - 18:19:11.063:  Exit Flash_ulwGetDFParms
+ >> 
+18_19_18 : 22.01.2024 - 18:19:11.066:  Entered Flash_ulwGetDFContents
+ >> 
+18_19_18 : 22.01.2024 - 18:19:11.916:  Exit Flash_ulwGetDFContents
+ >> 
+18_19_18 : 22.01.2024 - 18:19:13.056:  Entered Flash_ulwGetDFParms
+ >> 
+18_19_18 : 22.01.2024 - 18:19:13.905:  Exit Flash_ulwGetDFParms
+ >> 
+18_19_18 : 22.01.2024 - 18:19:13.906:  Entered Flash_ulwDoConnect()
+ >> 
+18_19_18 : 22.01.2024 - 18:19:13.912:  Parameters are: FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,E,8,1, C:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl, 0xEBFFFF32, 0
+ >> 
+18_19_18 : 22.01.2024 - 18:19:13.919:  Entered Flash_ulwOpenValidPort(FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,E,8,1)
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.003:  Data from FT_ListDevices() to open port are: (idx=0, Serial Number=FT6RVBE9C)
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.018:  COM-Port opened with: 3000000
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.019:  Exit Flash_ulwOpenValidPort() with success
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.025:  Read data from DNL-File
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.884:  Found Type AURIX2G of TC39x
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.885:  Read DFInfo (DIB). New values are: 0, 0, 300000000, TC39x, 10000, 10000, 2000, 65000, 50, 50000, 500000, 1, 100, 4, 100, 10000, 800, 4000, 96, 130, 200000, 32, 130, 200000
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.892:  Debug: PortSwitch(P_NORM)
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.915:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,E,8,1
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.930:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_19_18 : 22.01.2024 - 18:19:14.931:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_19_18 : 22.01.2024 - 18:19:15.014:  ----->Switch ON VPP
+ >> 
+18_19_18 : 22.01.2024 - 18:19:15.083:  Init Bootstrap, Attempt: 1
+ >> 
+18_19_18 : 22.01.2024 - 18:19:15.586:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_19_18 : 22.01.2024 - 18:19:15.664:  ----->Switch ON VPP
+ >> 
+18_19_18 : 22.01.2024 - 18:19:15.733:  Init Bootstrap, Attempt: 2
+ >> 
+18_19_18 : 22.01.2024 - 18:19:16.235:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_19_18 : 22.01.2024 - 18:19:16.314:  ----->Switch ON VPP
+ >> 
+18_19_18 : 22.01.2024 - 18:19:16.383:  Init Bootstrap, Attempt: 3
+ >> 
+18_19_18 : 22.01.2024 - 18:19:16.885:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_19_18 : 22.01.2024 - 18:19:16.963:  ----->Switch ON VPP
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.032:  Init Bootstrap, Attempt: 4
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.533:  ERROR: No response on entering the Bootstrap-mode
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.534:  ----->Switch OFF VPP
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.551:  ----->Set Reset RELEASE
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.552:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.602:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.603:  Debug: PortSwitch(P_OFF)
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.649:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.650:  Exit Flash_ulwDoConnect() with no success
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.657:  Entered Flash_ulwDoReset()
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.663:  ----->Switch OFF VPP
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.680:  ----->Set Reset ACTIVE
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.681:  Debug: PortSwitch(P_RESON)
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.727:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.729:  ----->Set Reset RELEASE
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.734:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.790:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.790:  Debug: PortSwitch(P_OFF)
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.836:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.896:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 closed
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.898:  Exit Flash_ulwDoReset() with 0x0
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.905:  Write Resultfile with value 0x34
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.913:  Entered Flash_ulwDoDisconnect()
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.918:  ----->Switch OFF VPP
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.934:  ----->Set Reset RELEASE
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.935:  Exit Flash_ulwDoDisconnect()
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.941:  Entered Flash_ulwShutDown()
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.949:  ----->Switch OFF VPP
+ >> 
+18_19_18 : 22.01.2024 - 18:19:17.957:  Exit Flash_ulwShutDown() with success >> 
+18_19_18 : VCPU flashing Failed >> 
+18_21_58 : VCPU flashing Started >> 
+18_22_09 : 
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.238:  Roli's and Peter's FlashGUI         Version 7.33/28.02.2022   
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.240:  CommandLine = C:\Tools\v7.33\bin\FlashGUI.exe  /h /fC:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl /KDSC:\Workspace\Gen20X\builds\KDS\7513700148.KDS /iQuad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,8,1,even /KDSSAVE /av
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.246:  Entered Flash_ulwInit()
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.253:  Entered Flash_ulwShutDown()
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.259:  Exit Flash_ulwShutDown() with success
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.265:  Entered FLASH_ulwSetParms
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.274:  New values are: 250, 96, 1, 1, 5, 2, 100, 5, 100, 500, 1
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.280:  Exit FLASH_ulwSetParms
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.287:  Exit Flash_ulwInit() with success
+ >> 
+18_22_09 : 22.01.2024 - 18:22:01.293:  Entered Flash_ulwGetDFParms
+ >> 
+18_22_09 : 22.01.2024 - 18:22:02.147:  Exit Flash_ulwGetDFParms
+ >> 
+18_22_09 : 22.01.2024 - 18:22:02.149:  Entered Flash_ulwGetDFContents
+ >> 
+18_22_09 : 22.01.2024 - 18:22:03.022:  Exit Flash_ulwGetDFContents
+ >> 
+18_22_09 : 22.01.2024 - 18:22:04.211:  Entered Flash_ulwGetDFParms
+ >> 
+18_22_09 : 22.01.2024 - 18:22:05.060:  Exit Flash_ulwGetDFParms
+ >> 
+18_22_09 : 22.01.2024 - 18:22:05.061:  Entered Flash_ulwDoConnect()
+ >> 
+18_22_09 : 22.01.2024 - 18:22:05.067:  Parameters are: FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,N,8,1, C:\Workspace\Gen20x\builds\SB_E307.0\vcpu\output_release\bin\TRICORE_TC39XX_VCPU_FULL_IMAGE_Developer.dnl, 0xEBFFFF32, 0
+ >> 
+18_22_09 : 22.01.2024 - 18:22:05.073:  Entered Flash_ulwOpenValidPort(FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9,3000000,N,8,1)
+ >> 
+18_22_09 : 22.01.2024 - 18:22:05.153:  Data from FT_ListDevices() to open port are: (idx=0, Serial Number=FT6RVBE9C)
+ >> 
+18_22_09 : 22.01.2024 - 18:22:05.169:  COM-Port opened with: 3000000
+ >> 
+18_22_09 : 22.01.2024 - 18:22:05.173:  Exit Flash_ulwOpenValidPort() with success
+ >> 
+18_22_09 : 22.01.2024 - 18:22:05.191:  Read data from DNL-File
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.053:  Found Type AURIX2G of TC39x
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.054:  Read DFInfo (DIB). New values are: 0, 0, 300000000, TC39x, 10000, 10000, 2000, 65000, 50, 50000, 500000, 1, 100, 4, 100, 10000, 800, 4000, 96, 130, 200000, 32, 130, 200000
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.061:  Debug: PortSwitch(P_NORM)
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.073:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.088:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.166:  ----->Switch ON VPP
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.235:  Init Bootstrap, Attempt: 1
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.236:  PortClear has shreddered 2550 characters
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.744:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.822:  ----->Switch ON VPP
+ >> 
+18_22_09 : 22.01.2024 - 18:22:06.891:  Init Bootstrap, Attempt: 2
+ >> 
+18_22_09 : 22.01.2024 - 18:22:07.393:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_22_09 : 22.01.2024 - 18:22:07.471:  ----->Switch ON VPP
+ >> 
+18_22_09 : 22.01.2024 - 18:22:07.540:  Init Bootstrap, Attempt: 3
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.042:  DEBUG: Debugboard Gen3/4 detected !
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.120:  ----->Switch ON VPP
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.189:  Init Bootstrap, Attempt: 4
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.190:  PortClear has shreddered 2040 characters
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.697:  ERROR: No response on entering the Bootstrap-mode
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.698:  ----->Switch OFF VPP
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.715:  ----->Set Reset RELEASE
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.717:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.763:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.764:  Debug: PortSwitch(P_OFF)
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.811:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.812:  Exit Flash_ulwDoConnect() with no success
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.819:  Entered Flash_ulwDoReset()
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.825:  ----->Switch OFF VPP
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.842:  ----->Set Reset ACTIVE
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.843:  Debug: PortSwitch(P_RESON)
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.888:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.890:  ----->Set Reset RELEASE
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.895:  Debug: PortSwitch(P_RESOFF)
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.950:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.951:  Debug: PortSwitch(P_OFF)
+ >> 
+18_22_09 : 22.01.2024 - 18:22:08.999:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 Setup with: 3000000,N,8,1
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.061:  COM-Port FTDI_ID00Quad-G3G-RS232-DebugAdapter C - FT6RVBE9 closed
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.062:  Exit Flash_ulwDoReset() with 0x0
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.069:  Write Resultfile with value 0x34
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.077:  Entered Flash_ulwDoDisconnect()
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.082:  ----->Switch OFF VPP
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.099:  ----->Set Reset RELEASE
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.100:  Exit Flash_ulwDoDisconnect()
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.107:  Entered Flash_ulwShutDown()
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.113:  ----->Switch OFF VPP
+ >> 
+18_22_09 : 22.01.2024 - 18:22:09.119:  Exit Flash_ulwShutDown() with success >> 
+18_22_09 : VCPU flashing Failed >> 

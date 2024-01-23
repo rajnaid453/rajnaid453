@@ -1,0 +1,139 @@
+node ('NTG6_CGSCDXR60581362_CEI') {
+
+	timestamps () {
+
+		script{
+		env.BUILD_PATH = 'C:\\WorkSpace\\testfarm\\report_upload_checkout'
+        env.COMMON_PATH = 'C:\\TESTFARM_AUTOMATION' 
+        }
+        
+        stage('CLEAN') {
+			bat '''
+				::cleaning workspace directory & creating workspace directory
+					RMDIR /S /Q %BUILD_PATH%
+                    md %BUILD_PATH%
+										
+                ::cleaning testfarm directory & creating fresh directories
+					::RMDIR /S /Q %COMMON_PATH%\\Automation_ReportGen
+                    ::ping -n 10 localhost >NUL
+                    ::md %COMMON_PATH%\\Automation_ReportGen
+					                  
+				'''
+				
+		}
+		
+		
+		stage('OMS TESTFARM CHECKOUT') {
+		
+			ws("${BUILD_PATH}") {
+				try {
+				checkout([$class: 'GitSCM', 
+				branches: [[name: '*/Gen20x']], 
+				doGenerateSubmoduleConfigurations: false, 
+				extensions: [], submoduleCfg: [], 
+				userRemoteConfigs: [[credentialsId: 'TE02628_gsep', 
+				url: 'https://gsep.daimler.com/stash/scm/ntggr/oms_testfarm.git']]])
+		
+			script{
+						
+						//"MAIL.PROPERTIES"
+						env.MAIL_TT = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+														 $cat = cat ${BUILD_PATH}\\mail.properties | select-string -pattern "Test_Farm_Gen20=" 
+															$cat -split "Test_Farm_Gen20="
+															''', returnStdout: true).trim()
+						
+						
+						
+						//"CONFIG.PROPERTIES"																
+																		
+						env.variant = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "variant=" 
+																					$cat -split "variant="
+																				''', returnStdout: true).trim()
+                                
+						env.buildType = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "buildType=" 
+																					$cat -split "buildType="
+																				''', returnStdout: true).trim()	
+								
+						env.buildNumber = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "buildNumber=" 
+																					$cat -split "buildNumber="
+																				''', returnStdout: true).trim()	
+								
+						env.richosBuild = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "richosBuild=" 
+																					$cat -split "richosBuild="
+																				''', returnStdout: true).trim()													
+																				
+																				
+						env.userName = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "userName=" 
+																					$cat -split "userName="
+																				''', returnStdout: true).trim()												
+																				
+																				
+																				
+						env.artifactoryToken = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "artifactoryToken=" 
+																					$cat -split "artifactoryToken="
+																				''', returnStdout: true).trim()
+
+						
+						}
+				currentBuild.result = 'SUCCESS'
+			}catch(e){
+				currentBuild.result = 'FAILURE'
+				env.MAILID="$MAIL_TT, altran.muktham@mercedes-benz.com"
+				env.STAGE='DATABASE UPLOAD STAGE - EXECUTION'
+				env.STATUS="${currentBuild.result}"
+				notify("${STATUS}","${MAILID}","${STAGE}")
+			}//catch End 
+			}
+		}//checkout Testfarm End
+        
+        	
+		stage('REPORT UPLOAD') {
+			ws("${BUILD_PATH}") {
+				try {
+					bat '''
+						cd %BUILD_PATH%\\TestBench_2\\6.REPORT_UPLOAD\\
+						python -u ReadingExcelDataModifiedScript.py
+					'''
+					//success Mail notifier
+						currentBuild.result = 'SUCCESS'
+						env.MAILID="$MAIL_TT, altran.muktham@mercedes-benz.com"
+						env.STAGE='DATABASE UPLOAD STAGE - EXECUTION'
+						env.STATUS="${currentBuild.result}"
+						notify("${STATUS}","${MAILID}","${STAGE}")
+					
+				}catch(e){
+					currentBuild.result = 'FAILURE'
+					env.MAILID="$MAIL_TT, altran.muktham@mercedes-benz.com"
+					env.STAGE='DATABASE UPLOAD STAGE - EXECUTION'
+					env.STATUS="${currentBuild.result}"
+					notify("${STATUS}","${MAILID}","${STAGE}")
+				}//catch End
+
+			}//Workspace Buildpath End
+		}//Report Database Upload Stage End
+        
+        //publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "${COMMON_PATH}\\Automation_ReportGen\\${buildNumber}\\Reports", reportFiles: "${buildNumber}_Report.html", reportName: 'HTML-Report', reportTitles: ''])
+
+	}//Timestamp End
+}//Main Node End
+
+
+//Email Notifier
+def notify(STATUS,MAILID,STAGE) {
+			emailext (
+			attachLog: true,
+			subject: "OMS_TESTFARM - ${env.STAGE} -> ${STATUS}",
+			body: """
+			Hello All, \n\nTestFarm activity has ${STATUS} in the below stage \n\nSTAGE: ${STAGE}\n\nJob '${env.JOB_NAME} [${env.BUILD_NUMBER}]':\n\nHTML Report:\n \\\\53.127.143.113\\oms_testing\\testing\\golden_test_videos_collection\\Report_output_automation\\${buildNumber}\\Reports\\${buildNumber}_Report.html \n\n\nCheck console output at "${env.JOB_URL}${env.BUILD_NUMBER}/consoleFull"
+			""",
+			to: "${MAILID}",
+			from: 'noreply-gen20x_testFarm@mercedes-benz.com'
+
+	)
+}

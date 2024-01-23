@@ -1,0 +1,59 @@
+
+11_43_38 : state ET Framework >> 
+11_43_38 : 200 >> {'Message': 'ETFW already started'}
+11_43_40 : state ET Online >> 
+11_43_40 : 200 >> {'Message': 'ETFW is not yet offline, so not able to go online. Current state is :Online'}
+11_43_40 : Started Ignition Procedure >> 
+11_43_40 : 200 >> {'Message': 'EVC_List02_VehLine_ST3 signal value has changed successfully'}
+11_43_45 : 200 >> {'Message': 'EVC_List03_StStyle_ST3 signal value has changed successfully'}
+11_43_51 : 200 >> {'IgnitionState': 'Accessory'}
+11_43_58 : 200 >> {'IgnitionState': 'On'}
+11_44_03 : 200 >> {'IgnitionState': 'On'}
+11_44_08 : VC flashing Started >> 
+11_44_08 : Get Coding >> Active_Comfort
+11_44_08 : 400 >> {'ErrorMessage': 'Diagnostics Service Not available or Not able to connect to the ECU'}
+11_44_08 : Get Coding >> Video_Handling
+11_44_08 : 400 >> {'ErrorMessage': 'Diagnostics Service Not available or Not able to connect to the ECU'}
+11_44_08 : Get Coding >> Vehicle_Functions
+11_44_08 : 400 >> {'ErrorMessage': 'Diagnostics Service Not available or Not able to connect to the ECU'}
+12_01_58 : state ET Framework >> 
+12_01_58 : 200 >> {'Message': 'ETFW already started'}
+12_02_00 : state ET Online >> 
+12_02_00 : 200 >> {'Message': 'ETFW is not yet offline, so not able to go online. Current state is :Online'}
+12_02_00 : Started Ignition Procedure >> 
+12_02_00 : 200 >> {'Message': 'EVC_List02_VehLine_ST3 signal value has changed successfully'}
+12_02_05 : 200 >> {'Message': 'EVC_List03_StStyle_ST3 signal value has changed successfully'}
+12_02_10 : 200 >> {'IgnitionState': 'Accessory'}
+12_02_18 : 200 >> {'IgnitionState': 'On'}
+12_02_23 : 200 >> {'IgnitionState': 'On'}
+12_02_28 : VC flashing Started >> 
+12_02_28 : Get Coding >> Active_Comfort
+12_02_28 : 400 >> {'ErrorMessage': 'Diagnostics Service Not available or Not able to connect to the ECU'}
+12_02_28 : Get Coding >> Video_Handling
+12_02_28 : 400 >> {'ErrorMessage': 'Diagnostics Service Not available or Not able to connect to the ECU'}
+12_02_28 : Get Coding >> Vehicle_Functions
+12_02_28 : 400 >> {'ErrorMessage': 'Diagnostics Service Not available or Not able to connect to the ECU'}
+12_19_54 : state ET Framework >> 
+12_19_54 : 200 >> {'Message': 'ETFW already started'}
+12_19_56 : state ET Online >> 
+12_19_56 : 200 >> {'Message': 'ETFW is not yet offline, so not able to go online. Current state is :Online'}
+12_19_56 : Started Ignition Procedure >> 
+12_19_56 : 200 >> {'Message': 'EVC_List02_VehLine_ST3 signal value has changed successfully'}
+12_20_01 : 200 >> {'Message': 'EVC_List03_StStyle_ST3 signal value has changed successfully'}
+12_20_07 : 200 >> {'IgnitionState': 'Accessory'}
+12_20_14 : 200 >> {'IgnitionState': 'On'}
+12_20_19 : 200 >> {'IgnitionState': 'On'}
+12_20_24 : VC flashing Started >> 
+12_20_24 : Get Coding >> Active_Comfort
+12_30_33 : state ET Framework >> 
+12_30_38 : 200 >> {'Message': 'ApplicationPath: C:\\Tool\\ETFramework_v10.0.0\\v10.0.0\\bin\\ETGui.exe, Version: 10.0.0.0'}
+12_30_40 : state ET Online >> 
+12_31_22 : 200 >> {'Message': 'ETFW went online successfully'}
+12_31_22 : Started Ignition Procedure >> 
+12_31_22 : 200 >> {'Message': 'EVC_List02_VehLine_ST3 signal value has changed successfully'}
+12_31_27 : 200 >> {'Message': 'EVC_List03_StStyle_ST3 signal value has changed successfully'}
+12_31_32 : 200 >> {'IgnitionState': 'Off'}
+12_31_40 : 200 >> {'IgnitionState': 'On'}
+12_31_45 : 200 >> {'IgnitionState': 'On'}
+12_31_50 : VC flashing Started >> 
+12_31_50 : Get Coding >> Active_Comfort

@@ -1,0 +1,214 @@
+stage('NODE CHECKOUT') {
+	
+	if (params.NODE=='ALL'){
+		def names = ["NTG6_CGSCLXR70354048_CEI","NTG6_CGSCLXR69756861_CEI"]
+		for (int i=0; i<names.size(); i++) {   
+			def nodeName = names[i];
+			echo nodeName
+			node (nodeName) {
+			 
+				timestamps () {
+
+					script{
+
+						env.BUILD_PATH ='C:\\WorkSpace\\Gen20X\\artifactory_checkout'
+						env.COMMON_PATH = 'C:\\WorkSpace\\Gen20X\\artifactory_checkout\\Gen20x'
+		
+		
+					}
+					
+					stage('ARTIFACTORY & FLATBUILD CHECKOUT') {
+
+						ws("${BUILD_PATH}") {
+							try{
+							checkout([$class: 'GitSCM', 
+							branches: [[name: '*/Gen20x']], 
+							doGenerateSubmoduleConfigurations: false, 
+							extensions: [], submoduleCfg: [], 
+							userRemoteConfigs: [[credentialsId: 'TE02628_gsep', 
+							url: 'https://gsep.daimler.com/stash/scm/ntggr/oms_testfarm.git']]])
+					
+						script{
+									//"CONFIG.PROPERTIES"																
+																					
+									env.buildType = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																			  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "buildType=" 
+																						$cat -split "buildType="
+																					''', returnStdout: true).trim()	
+									
+									env.buildNumber = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																			  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "buildNumber=" 
+																						$cat -split "buildNumber="
+																					''', returnStdout: true).trim()	
+									
+									env.richosBuild = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																			  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "richosBuild=" 
+																						$cat -split "richosBuild="
+																					''', returnStdout: true).trim()													
+																					
+																					
+									env.userName = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																			  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "userName=" 
+																						$cat -split "userName="
+																					''', returnStdout: true).trim()												
+																					
+																					
+																					
+									env.password = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																			  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "password=" 
+																						$cat -split "password="
+																					''', returnStdout: true).trim()						
+							}
+							currentBuild.result = 'SUCCESS'
+						}catch(e){
+							currentBuild.result = 'FAILURE'
+							env.MAILID="altran.muktham@daimler.com,naishadham.chakradhar@daimler.com"
+							env.STAGE='PACKAGE DOWNLOAD & FLAT BUILD CHECKOUT STAGE - EXECUTION'
+							env.STATUS="${currentBuild.result}"
+							notify("${STATUS}","${MAILID}","${STAGE}")
+						}//Catch End 
+						}//Workspace End
+							
+					}//Artifactory Checkout Stage End
+					
+					stage('PACKAGE DOWNLOAD & FLAT BUILD') {
+						try {
+							bat'''				
+							cd /d %COMMON_PATH%
+							python -u gen20xAutoFlashing_v2.py %buildType% %buildNumber% %richosBuild% %userName% %password%
+							::curl -k -ucmahend:M@hi79@mbrdi -O "https://artifact.swf.daimler.com:443/artifactory/apricotbscqal/build/system.apricot-system-manifests.master.promote/1752/vcpu/output_release.zip"
+							
+							::cd /d %BUILD_PATH%
+							::"C:\\Program Files\\7-Zip\\7z.exe" x *.zip
+												
+							'''
+							
+						//success Mail notifier
+							currentBuild.result = 'SUCCESS'
+							env.MAILID="altran.muktham@daimler.com,naishadham.chakradhar@daimler.com"
+							env.STAGE='PACKAGE DOWNLOAD & FLAT BUILD'
+							env.STATUS="${currentBuild.result}"
+							notify("${STATUS}","${MAILID}","${STAGE}")
+								
+						}catch(e){
+							currentBuild.result = 'FAILURE'
+							env.MAILID="altran.muktham@daimler.com,naishadham.chakradhar@daimler.com"
+							env.STAGE='PACKAGE DOWNLOAD & FLAT BUILD'
+							env.STATUS="${currentBuild.result}"
+							notify("${STATUS}","${MAILID}","${STAGE}")
+						}//Catch End	
+					}//Package Download & Flat Build Stage End
+				}//Time Stamp End
+			}//Node End	
+		}//For Loop End	
+	}	else {
+		node(params.NODE) {
+			timestamps () {
+
+				script{
+
+					env.BUILD_PATH ='C:\\WorkSpace\\Gen20X\\artifactory_checkout'
+					env.COMMON_PATH = 'C:\\WorkSpace\\Gen20X\\artifactory_checkout\\Gen20x'
+	
+				}
+				
+				stage('ARTIFACTORY & FLATBUILD CHECKOUT') {
+
+					ws("${BUILD_PATH}") {
+						try{
+						checkout([$class: 'GitSCM', 
+						branches: [[name: '*/Gen20x']], 
+						doGenerateSubmoduleConfigurations: false, 
+						extensions: [], submoduleCfg: [], 
+						userRemoteConfigs: [[credentialsId: 'TE02628_gsep', 
+						url: 'https://gsep.daimler.com/stash/scm/ntggr/oms_testfarm.git']]])
+				
+					script{
+								//"CONFIG.PROPERTIES"																
+																				
+								env.buildType = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "buildType=" 
+																					$cat -split "buildType="
+																				''', returnStdout: true).trim()	
+								
+								env.buildNumber = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "buildNumber=" 
+																					$cat -split "buildNumber="
+																				''', returnStdout: true).trim()	
+								
+								env.richosBuild = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "richosBuild=" 
+																					$cat -split "richosBuild="
+																				''', returnStdout: true).trim()													
+																				
+																				
+								env.userName = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "userName=" 
+																					$cat -split "userName="
+																				''', returnStdout: true).trim()												
+																				
+																				
+																				
+								env.password = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "password=" 
+																					$cat -split "password="
+																				''', returnStdout: true).trim()						
+						}
+						currentBuild.result = 'SUCCESS'
+					}catch(e){
+						currentBuild.result = 'FAILURE'
+						env.MAILID="altran.muktham@daimler.com,naishadham.chakradhar@daimler.com"
+						env.STAGE='PACKAGE DOWNLOAD & FLAT BUILD CHECKOUT STAGE - EXECUTION'
+						env.STATUS="${currentBuild.result}"
+						notify("${STATUS}","${MAILID}","${STAGE}")
+					}//catch End 
+					}
+						
+				}//ARTIFACTORY & FLATBUILD CHECKOUT STAGE END
+				
+				stage('PACKAGE DOWNLOAD & FLAT BUILD') {
+					try {
+						bat'''				
+						cd /d %COMMON_PATH%
+						python -u gen20xAutoFlashing_v2.py %buildType% %buildNumber% %richosBuild% %userName% %password%
+						::curl -k -ucmahend:M@hi79@mbrdi -O "https://artifact.swf.daimler.com:443/artifactory/apricotbscqal/build/system.apricot-system-manifests.master.promote/1752/vcpu/output_release.zip"
+						
+						::cd /d %BUILD_PATH%
+						::"C:\\Program Files\\7-Zip\\7z.exe" x *.zip
+											
+						'''
+						
+					//success Mail notifier
+						currentBuild.result = 'SUCCESS'
+						env.MAILID="altran.muktham@daimler.com,naishadham.chakradhar@daimler.com"
+						env.STAGE='PACKAGE DOWNLOAD & FLAT BUILD'
+						env.STATUS="${currentBuild.result}"
+						notify("${STATUS}","${MAILID}","${STAGE}")
+							
+					}catch(e){
+						currentBuild.result = 'FAILURE'
+						env.MAILID="altran.muktham@daimler.com,naishadham.chakradhar@daimler.com"
+						env.STAGE='PACKAGE DOWNLOAD & FLAT BUILD'
+						env.STATUS="${currentBuild.result}"
+						notify("${STATUS}","${MAILID}","${STAGE}")
+					}//catch End	
+				}//Package Download & Flat Build Stage End
+			}//Time Stamp End
+		}//Node End	
+	}//Else End	
+}// Main Node End
+
+
+//Email Notifier
+def notify(STATUS,MAILID,STAGE) {
+			emailext (
+			attachLog: true,
+			subject: "FLAT BUILD GENERATION AUTOMATION- ${env.STAGE} -> ${STATUS}",
+			body: """
+			Hello All, \n\nFlat build generation activity has ${STATUS} in the below stage \n\nSTAGE: ${STAGE}\n\nJob '${env.JOB_NAME} [${env.BUILD_NUMBER}]':\n\n\nCheck console output at "${env.JOB_URL}${env.BUILD_NUMBER}/consoleFull"
+			""",
+			to: "${MAILID}",
+			from: 'noreply-releaseTeam@daimler.com'
+
+	)
+}

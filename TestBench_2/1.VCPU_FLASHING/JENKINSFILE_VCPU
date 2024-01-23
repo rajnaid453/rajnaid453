@@ -1,0 +1,146 @@
+node ('NTG6_CGSCLXR72955916_CEI'){
+	
+	timestamps () {
+		
+		script{
+		
+			env.BUILD_PATH ='C:\\WorkSpace\\Gen20X\\artifactory_checkout'
+			env.COMMON_PATH = 'C:\\WorkSpace\\Gen20X\\builds\\vcpu'
+			
+			
+		}
+		
+		stage('CLEAN') {
+			bat '''
+				::cleaning workspace directory & creating workspace directory
+				    RMDIR /S /Q %COMMON_PATH%
+                    md %COMMON_PATH%
+					RMDIR /S /Q %BUILD_PATH%
+                    md %BUILD_PATH%
+					
+				'''
+		}
+		
+		stage('TESTFARM CHECKOUT') {
+
+					ws("${BUILD_PATH}") {
+						try{
+						checkout([$class: 'GitSCM', 
+						branches: [[name: '*/Gen20x']], 
+						doGenerateSubmoduleConfigurations: false, 
+						extensions: [], submoduleCfg: [], 
+						userRemoteConfigs: [[credentialsId: 'TE02628_gsep', 
+						url: 'https://gsep.daimler.com/stash/scm/ntggr/oms_testfarm.git']]])
+				
+						script{
+								
+                                //"MAIL.PROPERTIES"
+								env.MAIL_TT = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+														 $cat = cat ${BUILD_PATH}\\mail.properties | select-string -pattern "Test_Farm_Gen20=" 
+															$cat -split "Test_Farm_Gen20="
+															''', returnStdout: true).trim()
+                                
+                                
+                                
+                                //"CONFIG.PROPERTIES"																
+								
+                                env.variant = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "variant=" 
+																					$cat -split "variant="
+																				''', returnStdout: true).trim()
+                                
+								env.buildType = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "buildType=" 
+																					$cat -split "buildType="
+																				''', returnStdout: true).trim()	
+								
+								env.buildNumber = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "buildNumber=" 
+																					$cat -split "buildNumber="
+																				''', returnStdout: true).trim()	
+								
+								env.richosBuild = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "richosBuild=" 
+																					$cat -split "richosBuild="
+																				''', returnStdout: true).trim()													
+																				
+																				
+								env.userName = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "userName=" 
+																					$cat -split "userName="
+																				''', returnStdout: true).trim()												
+																				
+																				
+																				
+								env.artifactoryToken = powershell( script: '''$BUILD_PATH= $env:BUILD_PATH
+																		  $cat = cat ${BUILD_PATH}\\config.properties | select-string -pattern "artifactoryToken=" 
+																					$cat -split "artifactoryToken="
+																				''', returnStdout: true).trim()						
+						}
+						currentBuild.result = 'SUCCESS'
+					}catch(e){
+						currentBuild.result = 'FAILURE'
+						env.MAILID="$MAIL_TT, altran.muktham@mercedes-benz.com"
+						env.STAGE='ARTIFACTORY & VCPU CHECKOUT STAGE - EXECUTION'
+						env.STATUS="${currentBuild.result}"
+						notify("${STATUS}","${MAILID}","${STAGE}")
+                        
+					}// CATCH END
+                    
+					}// WORKSPACE END
+						
+				}//TESTFARM CHECKOUT STAGE END
+		
+		
+		
+		stage('VCPU FLASHING') {
+			try {
+				bat'''				
+				cd /d %COMMON_PATH%
+                
+				::curl -k -u%userName%:%artifactoryToken% -O "https://artifact.swf.daimler.com:443/artifactory/apricotbscqal/build/system.apricot-system-manifests.master.promote/%buildNumber%/vcpu/i2/dev/output_release.zip"
+				
+				::"C:\\Program Files\\7-Zip\\7z.exe" x *.zip
+                
+                cd /d %BUILD_PATH%\\TestBench_2\\1.VCPU_FLASHING\\
+				
+				python -u VCPU_Flash_Script.py
+									
+				'''
+				
+				//success Mail notifier
+				currentBuild.result = 'SUCCESS'
+				env.MAILID="$MAIL_TT, altran.muktham@mercedes-benz.com"
+				env.STAGE='VCPU FLASHING STAGE'
+				env.STATUS="${currentBuild.result}"
+				notify("${STATUS}","${MAILID}","${STAGE}")
+					
+			}catch(e){
+				currentBuild.result = 'FAILURE'
+				env.MAILID="$MAIL_TT, altran.muktham@mercedes-benz.com"
+				env.STAGE='VCPU FLASHING STAGE'
+				env.STATUS="${currentBuild.result}"
+				notify("${STATUS}","${MAILID}","${STAGE}")
+                
+			}// CATCH END
+            
+		}// VCPU FLASHING STAGE END
+        
+	}// TIMESTAMP END
+    
+}// MAIN NODE END
+
+
+//Email Notifier
+def notify(STATUS,MAILID,STAGE) {
+			emailext (
+			attachLog: true,
+			subject: "TESTFARM- ${env.STAGE} -> ${STATUS}",
+			body: """
+			Hello All, \n\nVCPU Flashing activity has ${STATUS} in the below stage \n\nSTAGE: ${STAGE}\n\nJob '${env.JOB_NAME} [${env.BUILD_NUMBER}]':\n\n\nCheck console output at "${env.JOB_URL}${env.BUILD_NUMBER}/consoleFull"
+			""",
+			to: "${MAILID}",
+			from: 'noreply-gen20x_testFarm@mercedes-benz.com'
+
+	)
+}
